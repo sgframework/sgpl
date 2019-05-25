@@ -1,0 +1,17 @@
+Source: libcworld-crane-nature2015-perl
+Section: perl
+Priority: optional
+Maintainer: root <root@localhost.localdomain>
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: libmodule-build-perl (>= 0.4),
+ perl
+Standards-Version: 4.3.0
+Homepage: https://metacpan.org/release/cworld-crane_nature2015
+
+Package: libcworld-crane-nature2015-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Perl extension for terminal interface interacting with SG Main PHP Framework & MySql Database).
+ (no description was found)
+ .
+ This description was automagically extracted from the module by dh-make-perl.

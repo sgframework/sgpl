@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/cworld-crane_nature2015   .*/cworld-crane_nature2015-v?(\d[\d.-]*)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$
