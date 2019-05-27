@@ -1,0 +1,58 @@
+abstract: 'Perl extension for terminal interface interacting with SG Main PHP Framework & MySql Database).'
+author:
+  - '0x000001 <ads@ipool.remotewebaccess.com>'
+version: 0.01
+build_requires: {Logger}
+configure_requires:
+  Module::Build: 0.4
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120921'
+prereqs => {
+  runtime => {
+    requires => {
+      'perl'          => '5.006',
+      'File::Spec'    => '0.86',
+      'JSON'          => '2.16',
+    },
+    recommends => {
+      'JSON::XS'      => '2.26',
+    },
+    suggests => {
+      'Archive::Tar'  => '0',
+    },
+  },
+  build => {
+    requires => {
+      'Alien::SDL'    => '1.00',
+    },
+  },
+  test => {
+    recommends => {
+      'Test::Deep'    => '0.10',
+    },
+  }
+}
+provides => {
+  'SGPL::INIT' => {
+    file    => 'lib/inc/perl-init.pm',
+    version => '0.0.02',
+  }
+}
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 0.01
+resources => {
+  license     => [ 'http://dev.perl.org/licenses/' ],
+  homepage    => 'http://sourceforge.net/projects/module-build',
+  bugtracker  => {
+    web    => 'http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Meta',
+    mailto => 'meta-bugs@example.com',
+  },
+  repository  => {
+    url  => 'git://github.com/sgframework/sgpl.git',
+    web  => 'http://github.com/sgframework/sgpl',
+    type => 'git',
+  },
+  x_twitter   => 'http://twitter.com/h3xaploi8/',
+}
